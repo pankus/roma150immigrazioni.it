@@ -6552,6 +6552,10 @@ a.snippet__contents, a.snippet__contents:visited{
     margin-bottom:0
 }
 
+.snippet__prose__blank p {
+    color: #fff;
+}
+
 .snippet__body, .snippet__header{
     margin-bottom:1rem
 }

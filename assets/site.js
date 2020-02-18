@@ -19,13 +19,7 @@ $(document).ready(function() {
       maxZoom: 19
     }).addTo(map);
 
-    // $.ajax({
-    //     url: "/api/map.geojson",
-    //     dataType: "json"
-    // }).done(function(e) {
-    //     t(s = e)
-    // })
-    var sitiStyle = {
+    var biblioStyle = {
                   radius: 8,
                   stroke: true,
                   color: "#428BCA",
@@ -34,16 +28,15 @@ $(document).ready(function() {
                   fillColor: "#357EBD",
                   fillOpacity: 0.8
               };
-
-    // function onEachFeature(feature, layer) {
-    //     // var popupContent = "<p>I started out as a GeoJSON " +
-    //     //     feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
-    //     var pContent;
-    //     if (feature.properties && feature.properties.popupContent) {
-    //         pContent += feature.properties.biblio;
-    //     }
-    //     layer.bindPopup(pContent);
-    // }
+    var convegniStyle = {
+                  radius: 8,
+                  stroke: true,
+                  color: "#D2605A",
+                  weight: 3,
+                  opacity: 0.8,
+                  fillColor: "#C8514C",
+                  fillOpacity: 0.8
+              };
 
     var biblio = new L.geoJson(null, {
         onEachFeature: function(feature, layer) {
@@ -54,7 +47,7 @@ $(document).ready(function() {
                 pContent+= feature.properties.indirizzo + '">' + feature.properties.indi + '</a></p>';
                 pContent += '<h1 class="popover__title"> <a href="' + feature.properties.link +'">';
                 pContent += feature.properties.biblio + '</a></h1>';
-                pContent += '<p class="popover__subtitle">' + 'DATA' + '</p>';
+                pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
                 pContent += '</article>';
             }
             // console.log("Eccole:" + feature.properties.biblio);
@@ -62,25 +55,50 @@ $(document).ready(function() {
             layer.bindPopup(pContent);
         },
         pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, sitiStyle)
+            return L.circleMarker(latlng, biblioStyle)
         }
     });
-    // biblio.addTo(map);
     $.ajax({
      url: "data/biblio.geojson",
      dataType: "json",
      success: function(data) {
-        // console.log("Data successfully loaded!"),
-        // console.log(data),
-        // $(data.features).each(function(key, data) {
-        //     biblio.addData(data);
-        // });
         biblio.addData(data);
         biblio.addTo(map);
         map.fitBounds(biblio.getBounds());
-        // map.addLayer(biblio);
      },
-     // success: console.log("Data successfully loaded!"),
+     error: function (xhr) {
+        alert(xhr.statusText)
+     }
+    })
+
+    var convegni = new L.geoJson(null, {
+        onEachFeature: function(feature, layer) {
+            // var pContent;
+            if (feature.properties) {
+                var pContent = '<article class="popover"><header class="popover__header">';
+                pContent += '<p class="popover__subtitle"> <a href="https://maps.google.com/?q=';
+                pContent+= feature.properties.indirizzo + '">' + feature.properties.indi + '</a></p>';
+                pContent += '<h1 class="popover__title"> <a href="' + feature.properties.link +'">';
+                pContent += feature.properties.biblio + '</a></h1>';
+                pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
+                pContent += '</article>';
+            }
+            // console.log("Eccole:" + feature.properties.biblio);
+            // layer.bindPopup(feature.properties.biblio);
+            layer.bindPopup(pContent).openPopup();
+        },
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, convegniStyle)
+        }
+    });
+    $.ajax({
+     url: "data/convegni.geojson",
+     dataType: "json",
+     success: function(data) {
+        convegni.addData(data);
+        convegni.addTo(map);
+        // map.fitBounds(biblio.getBounds());
+     },
      error: function (xhr) {
         alert(xhr.statusText)
      }
