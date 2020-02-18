@@ -6152,7 +6152,8 @@ a.panel__contents .panel__title{
     text-align:inherit;
     width:66.6666666667%;
     margin-left:0;
-    margin-right:0
+    margin-right:0;
+    display: contents;
 }
 
 .inpage--home .inpage__headline::after, .inpage--home .inpage__introduction::after, .set-section.type-center .set-section__media-container::after, .set-section.type-center .set-section__type-container::after{
