@@ -1,15 +1,17 @@
 $(document).ready(function() {
     $("[data-global-menu]").click(function(e) {
-        e.preventDefault(), $("body").toggleClass("global-menu-on")
+        e.preventDefault(),
+        $("body").toggleClass("global-menu-on")
     });
     $(".global-menu__link").click(function(e) {
-        e.preventDefault(), $("body").removeClass("global-menu-on");
+        // e.preventDefault(),
+        $("body").removeClass("global-menu-on");
     });
 
 
-    $( "a.scrollLink" ).click(function( event ) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 50 }, 500);
+    $( ".scrollLink" ).click(function( event ) {
+        // event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 10 }, 500);
     });
 
     var map = L.map('map').setView([41.899466, 12.4875926], 13);
@@ -59,7 +61,8 @@ $(document).ready(function() {
         }
     });
     $.ajax({
-     url: "data/biblio.geojson",
+     // url: "data/biblio.geojson",
+     url: "data/biblio.json",
      dataType: "json",
      success: function(data) {
         biblio.addData(data);

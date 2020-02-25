@@ -6203,7 +6203,7 @@ a.panel__contents .panel__title{
     float:left;
     clear:none;
     text-align:inherit;
-    /*width:33.3333333333%;*/
+    width:40%;
     margin-left:0;
     margin-right:0
 }
@@ -6241,7 +6241,8 @@ a.panel__contents .panel__title{
 
 @media only screen and (min-width:768px){
     .inpage--home .inpage__title{
-    padding-left:2.5rem
+    padding-left:2.5rem;
+    width: 50%;
 }
 
 }
