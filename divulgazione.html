@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>Roma2021</title>
+    <meta name="description" content="Unità di Ricerca pressto Terzi dell’Istituto di Studi sul Mediterraneo (ISMed)." />
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Storia delle Migrazioni" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Storia delle Migrazioni" />
+    <meta property="og:url" content="#" />
+    <meta property="og:description" content="Unità di Ricerca pressto Terzi dell’Istituto di Studi sul Mediterraneo (ISMed)." />
+    <!--/ Open Graph -->
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="assets/site.js"></script>
+  </head>
+
+  <body class="theme-neg">
+    <div class="page">
+      <!-- HEADER -->
+      <header class="page__header" role="banner">
+        <div class="inner">
+          <div class="page__headline">
+            <h1 class="page__title">
+            <a href="index.html" title="Storia delle Migrazioni">
+              <img src="img/logo_neg.svg" alt="urtRoma logo" width="188" height="32" />
+              <span>ISMed - Storia delle Migrazioni</span>
+            </a>
+            </h1>
+          </div>
+          <nav class="page__prime-nav nav" role="navigation">
+            <a href="#global-menu" title="Reveal menu" class="prime-action prime-action--browse" data-global-menu><span>Browse</span></a></h2>
+            <div class="menu-wrapper">
+              <h2>Browse</h2>
+              <button type="button" class="global-menu-dismiss" title="Close" data-global-menu><span>Dismiss</span></button>
+              <ul class="global-menu" id="global-menu">
+                <li class="global-menu__item">
+                  <a href="index.html" title="roma150immigrazioni" class="global-menu__link"><span>Home</span></a>
+                </li>
+                <li class="global-menu__item">
+                  <a href="index.html#roma2021" title="Visit The Greenhouse" class="global-menu__link scrollLink"><span>Roma150</span></a>
+                </li>
+                <li class="global-menu__item">
+                  <a href="about.html" title="Chi siamo" class="global-menu__link"><span>About</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- HEADER close -->
+
+      <main class="page__body" role="main">
+
+        <article class="inpage inpage--single inpage--static">
+          <header class="inpage__header is-contained">
+            <div class="inner">
+              <div class="inpage__headline">
+                <!-- <div class="inpage__introduction">
+                  <p style="color: #fff;"> Biblioteche di Roma e CNR - Istituto di studi sul Mediterraneo</p>
+                  <p style="color: #fff;"> presentano</p>
+                </div> -->
+                <h1 class="inpage__title">Sette incontri in sette biblioteche comunali</h1>
+                <div class="inpage__introduction">
+                  <p style="color: #fff;">Sulla storia e la memoria dei quartieri con il coinvolgimento della cittadinanza, delle scuole, delle istituzioni e dell’associazioni locali</p>
+                </div>
+              </div>
+            </div>
+
+            <figure class="inpage__media inpage__media--cover media">
+              <div class="media__item">
+                <img src="img/programma.jpg" alt="Cover image" width="1920" height="960" />
+              </div>
+
+            </figure>
+
+          </header>
+
+          <div class="inpage__body">
+            <div class="inner">
+              <div class="callout">
+                <p style="text-align: center">Programma delle <a href="#">iniziative</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map__box">
+            <span id="eventi"></span>
+            <div class="inpage__body inpage__body--map-container">
+              <div id="map"></div>
+            </div>
+          </div>
+
+          <div class="inpage__body">
+            <div class="inner">
+              <div class="n-grid n-grid-3">
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Collina della Pace</h1>
+                            <h2 class="snippet__subtitle">7 maggio 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Ennio Flaiano</h1>
+                            <h2 class="snippet__subtitle">15 maggio 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Elsa Morante</h1>
+                            <h2 class="snippet__subtitle">22 maggio 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div> <!-- n-grid-3 -->
+
+              <div class="n-grid n-grid-3">
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Goffredo Mameli</h1>
+                            <h2 class="snippet__subtitle">1 ottobre 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Renato Nicolini</h1>
+                            <h2 class="snippet__subtitle">15 ottobre 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Pier Paolo Pasolini</h1>
+                            <h2 class="snippet__subtitle">29 ottobre 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div> <!-- n-grid-3 -->
+
+              <div class="n-grid n-grid-3">
+                <div class="n-cell">
+                  <article class="snippet">
+                    <div class="snippet__contents">
+                      <header class="snippet__header">
+                        <div class="snippet_headline">
+                          <a href="#" title="Visit page" class="snippet__contents">
+                            <h1 class="snippet__title">Biblioteca Franco Basaglia</h1>
+                            <h2 class="snippet__subtitle">13 novembre 2020</h2>
+                          </a>
+                        </div>
+                      </header>
+                      <div class="snippet__body">
+                        <div class="snippet__prose">
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <footer class="snippet__footer">
+                          <a href="#ricerca" title="Visit page" class="snippet__button-go scrollLink"><span>More</span></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div> <!-- n-grid-3 -->
+
+            </div>
+          </div>
+
+        </article>
+
+      </main>
+
+      <footer class="page__footer" role="contentinfo">
+        <div class="inner">
+          <div class="page__credits">
+            <p class="credits">pankus • 2020</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>  <!-- page -->
+
+  </body>
+</html>

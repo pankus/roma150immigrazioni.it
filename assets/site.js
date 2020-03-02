@@ -74,37 +74,44 @@ $(document).ready(function() {
      }
     })
 
-    var convegni = new L.geoJson(null, {
-        onEachFeature: function(feature, layer) {
-            // var pContent;
-            if (feature.properties) {
-                var pContent = '<article class="popover"><header class="popover__header">';
-                pContent += '<p class="popover__subtitle"> <a href="https://maps.google.com/?q=';
-                pContent+= feature.properties.indirizzo + '">' + feature.properties.indi + '</a></p>';
-                pContent += '<h1 class="popover__title"> <a href="' + feature.properties.link +'">';
-                pContent += feature.properties.biblio + '</a></h1>';
-                pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
-                pContent += '</article>';
-            }
-            // console.log("Eccole:" + feature.properties.biblio);
-            // layer.bindPopup(feature.properties.biblio);
-            layer.bindPopup(pContent).openPopup();
-        },
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, convegniStyle)
-        }
-    });
-    $.ajax({
-     url: "data/convegni.geojson",
-     dataType: "json",
-     success: function(data) {
-        convegni.addData(data);
-        convegni.addTo(map);
-        // map.fitBounds(biblio.getBounds());
-     },
-     error: function (xhr) {
-        alert(xhr.statusText)
-     }
-    })
+    var pathname = window.location.pathname;
+    // if (window.location.pathname == '/index.htmll')
+    // if (window.location.pathname == '/roma2021/index.html') {
+    if (pathname.indexOf("index.html") >= 0) {
+      console.log(pathname)
+      var convegni = new L.geoJson(null, {
+          onEachFeature: function(feature, layer) {
+              // var pContent;
+              if (feature.properties) {
+                  var pContent = '<article class="popover"><header class="popover__header">';
+                  pContent += '<p class="popover__subtitle"> <a href="https://maps.google.com/?q=';
+                  pContent+= feature.properties.indirizzo + '">' + feature.properties.indi + '</a></p>';
+                  pContent += '<h1 class="popover__title"> <a href="' + feature.properties.link +'">';
+                  pContent += feature.properties.biblio + '</a></h1>';
+                  pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
+                  pContent += '</article>';
+              }
+              // console.log("Eccole:" + feature.properties.biblio);
+              // layer.bindPopup(feature.properties.biblio);
+              layer.bindPopup(pContent).openPopup();
+          },
+          pointToLayer: function (feature, latlng) {
+              return L.circleMarker(latlng, convegniStyle)
+          }
+      });
+      $.ajax({
+       url: "data/convegni.geojson",
+       dataType: "json",
+       success: function(data) {
+          convegni.addData(data);
+          convegni.addTo(map);
+          // map.fitBounds(biblio.getBounds());
+       },
+       error: function (xhr) {
+          alert(xhr.statusText)
+       }
+      })
+
+    }
 
 });

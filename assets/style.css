@@ -6578,9 +6578,10 @@ a.snippet__contents, a.snippet__contents:visited{
 
 .snippet__subtitle{
     font-weight:400;
-    font-size:.875rem;
+    /*font-size:.875rem;*/
+    font-size: 1.2rem;
     color:rgba(83, 78, 78, .64);
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     line-height:1rem;
     margin:.25rem 0;
     position:relative
