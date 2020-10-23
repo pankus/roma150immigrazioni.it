@@ -6407,6 +6407,63 @@ a.panel__contents .panel__title{
 
 }
 
+/* MODIFICA two columns */
+@media only screen and (min-width:768px){
+    .n-grid-1 .n-cell:nth-child(4){
+    order:4;
+    width:calc(100%/3)
+}
+
+.n-grid-2rgt{
+    justify-content:flex-end
+}
+
+.n-grid-2rgt .n-cell:nth-child(1){
+    display:flex;
+    order:1;
+    /*width:calc(100%/3)*/
+    width:70%
+}
+
+}
+
+/*.n-grid-2rgt .n-cell:nth-child(2) .snippet__contents{
+    min-height:16rem
+}
+
+@media only screen and (min-width:768px){
+    .n-grid-2rgt .n-cell:nth-child(2) .snippet__contents{
+    min-height:24rem
+}
+
+}
+
+@media only screen and (min-width:992px){
+    .n-grid-2rgt .n-cell:nth-child(2) .snippet__contents{
+    min-height:30rem
+}
+
+}*/
+
+@media only screen and (min-width:768px){
+    .n-grid-2rgt .n-cell:nth-child(2){
+    order:2;
+    /*width:calc(2/3*100%)*/
+    width:30%
+}
+
+.n-grid-2rgt .n-cell:nth-child(3){
+    order:3;
+    width:calc(100%/3)
+}
+
+.n-grid-2rgt .n-cell:nth-child(4){
+    order:4;
+    width:calc(100%/3)
+}
+
+}
+
 /*/////////////////////////////*/
 /*MODIFICA LAYOUT*/
 @media only screen and (min-width:768px) {
