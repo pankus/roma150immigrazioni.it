@@ -8,11 +8,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="232.49002"
+   width="226.95667"
    height="29.760502"
    version="1.1"
    id="svg10"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo_track.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata16">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,7 +32,7 @@
        clipPathUnits="userSpaceOnUse"
        id="clipPath1378">
       <rect
-         style="opacity:1;fill:#5bffff;fill-opacity:0.52027031;stroke:none;stroke-width:1.04880881;stroke-opacity:1"
+         style="opacity:1;fill:#5bffff;fill-opacity:0.52027;stroke:none;stroke-width:1.04881;stroke-opacity:1"
          id="rect1380"
          width="33"
          height="29.752321"
@@ -44,7 +44,7 @@
        clipPathUnits="userSpaceOnUse"
        id="clipPath1382">
       <rect
-         style="opacity:1;fill:#5bffff;fill-opacity:0.52027031;stroke:none;stroke-width:1.04880881;stroke-opacity:1"
+         style="opacity:1;fill:#5bffff;fill-opacity:0.52027;stroke:none;stroke-width:1.04881;stroke-opacity:1"
          id="rect1384"
          width="33"
          height="29.752321"
@@ -57,7 +57,7 @@
        id="clipPath994">
       <path
          inkscape:connector-curvature="0"
-         style="fill:#d04200;stroke-width:0.93001562"
+         style="fill:#d04200;stroke-width:0.930016"
          d="M 27.90047,2e-7 H 1.8600313 C 0.8370141,2e-7 0,0.8370143 0,1.8600315 V 27.900472 c 0,1.023017 0.8370141,1.860031 1.8600313,1.860031 H 27.90047 c 1.023017,0 1.860031,-0.837014 1.860031,-1.860031 V 1.8600315 C 29.760501,0.8370143 28.923487,2e-7 27.90047,2e-7 Z"
          id="path996" />
     </clipPath>
@@ -78,8 +78,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="2.8284271"
-     inkscape:cx="38.358965"
-     inkscape:cy="13.507851"
+     inkscape:cx="90.853597"
+     inkscape:cy="13.684628"
      inkscape:window-x="44"
      inkscape:window-y="29"
      inkscape:window-maximized="1"
@@ -113,7 +113,7 @@
   </sodipodi:namedview>
   <path
      inkscape:connector-curvature="0"
-     style="fill:#d04200;stroke-width:0.93001562"
+     style="fill:#d04200;stroke-width:0.930016"
      d="M 27.909893,0 H 1.8694536 C 0.84643664,0 0.00942264,0.83701399 0.00942264,1.860031 v 26.04044 c 0,1.023017 0.837014,1.860031 1.86003096,1.860031 H 27.909893 c 1.023017,0 1.860031,-0.837014 1.860031,-1.860031 V 1.860031 C 29.769924,0.83701399 28.93291,0 27.909893,0 Z"
      id="path373-0" />
   <image

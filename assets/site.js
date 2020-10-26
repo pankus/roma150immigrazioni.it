@@ -49,7 +49,8 @@ $(document).ready(function() {
                 pContent+= feature.properties.indirizzo + '">' + feature.properties.indi + '</a></p>';
                 pContent += '<h1 class="popover__title"> <a href="' + feature.properties.link +'">';
                 pContent += feature.properties.biblio + '</a></h1>';
-                pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
+                // DATA INCONTRO
+                // pContent += '<p class="popover__subtitle">' + feature.properties.data + '</p>';
                 pContent += '</article>';
             }
             // console.log("Eccole:" + feature.properties.biblio);

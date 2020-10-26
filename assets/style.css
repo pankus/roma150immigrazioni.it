@@ -4910,7 +4910,8 @@ a.panel__contents .panel__title{
 }
 
 .global-menu__label, .global-menu__link{
-    font-size:.875rem;
+    /*font-size:.875rem;*/
+    font-size:.975rem;
     line-height:2rem;
     position:relative;
     display:block
@@ -6627,10 +6628,18 @@ a.snippet__contents, a.snippet__contents:visited{
 
 @media only screen and (min-width:768px){
     .snippet__title{
-    font-size:1.5rem;
-    line-height:2rem
+    /*font-size:1.5rem;*/
+    /*line-height:2rem*/
+    font-size:1.8rem;
+    line-height:2.3rem
 }
 
+}
+
+.snippet__pretitle{
+    font-size:1.4rem;
+    line-height:1.75rem;
+    margin:0
 }
 
 .snippet__subtitle{

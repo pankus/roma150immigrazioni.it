@@ -1,1 +1,5 @@
 CNAME
+*.pyc
+*.db
+*.sublime-project
+*.sublime-workspace
