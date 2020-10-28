@@ -5250,8 +5250,8 @@ a.panel__contents .panel__title{
 
 @media only screen and (min-width:992px){
     .inpage__body{
-    /*padding:4rem 0*/
-    padding:2rem 0
+    padding:4rem 0
+    /*padding:2rem 0*/
 }
 
 }
