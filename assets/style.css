@@ -6398,12 +6398,14 @@ a.panel__contents .panel__title{
 
 .n-grid-2 .n-cell:nth-child(3){
     order:3;
-    width:calc(100%/3)
+    /*width:calc(100%/3)*/
+    width:65%;
 }
 
 .n-grid-2 .n-cell:nth-child(4){
     order:4;
-    width:calc(100%/3)
+    /*width:calc(100%/3)*/
+    width:33%
 }
 
 }
