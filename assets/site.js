@@ -21,6 +21,8 @@ $(document).ready(function() {
       maxZoom: 19
     }).addTo(map);
 
+    map.scrollWheelZoom.disable();
+
     var biblioStyle = {
                   radius: 8,
                   stroke: true,
@@ -79,7 +81,7 @@ $(document).ready(function() {
     // if (window.location.pathname == '/index.htmll')
     // if (window.location.pathname == '/roma2021/index.html') {
     if (pathname.indexOf("index.html") >= 0) {
-      console.log(pathname)
+      // console.log(pathname)
       var convegni = new L.geoJson(null, {
           onEachFeature: function(feature, layer) {
               // var pContent;
