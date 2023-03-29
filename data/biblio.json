@@ -74,7 +74,7 @@
         "biblio": "Biblioteca Elsa Morante",
         "link": "https://www.bibliotechediroma.it/opac/library/biblioteca-elsa-morante/RMBO2",
         "indi": "Via Adolfo Cozza 7",
-        "data": "22 Maggio 2020"
+        "data": "27 Maggio 2022"
       },
       "geometry": {
         "type": "Point",
@@ -138,6 +138,101 @@
         "coordinates": [
           12.685594,
           41.864021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "nome": "Quarticciolo",
+        "indirizzo": "Via Castellaneta 10 00171 ROMA",
+        "biblio": "Biblioteca Quarticciolo",
+        "link": "https://www.bibliotechediroma.it/opac/library/Teatro%20Biblioteca%20Quarticciolo/RMBG2",
+        "indi": "Via Castellaneta 10",
+        "data": "1 Marzo 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.575919,
+          41.891337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "nome": "Testaccio",
+        "indirizzo": "Via Nicola Zabaglia 27/B 00153 ROMA",
+        "biblio": "Biblioteca Enzo Tortora",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Enzo%20Tortora/RMBA3",
+        "indi": "Via Nicola Zabaglia 27/B",
+        "data": "22 Marzo 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.477505,
+          41.877186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "nome": "Tiburtino",
+        "indirizzo": "Via di Grotta di Gregna 37 00155 ROMA",
+        "biblio": "Biblioteca Vaccheria Nardi",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Vaccheria%20Nardi/RMBE1",
+        "indi": "Via di Grotta di Gregna 37",
+        "data": "5 Maggio 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.565314,
+          41.914079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "nome": "San Giovanni",
+        "indirizzo": "Via la Spezia 21 00182 ROMA",
+        "biblio": "Biblioteca Nelson Mandela",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Nelson%20Mandela/RMBI1",
+        "indi": "Via la Spezia 21",
+        "data": "27 Settembre 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.511684,
+          41.886059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 7,
+        "nome": "Acilia",
+        "indirizzo": "Via Umberto Lilloni 39/45 00124 ROMA",
+        "biblio": "Biblioteca Sandro Onofri",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Sandro%20Onofri/RMBO1",
+        "indi": "Via Umberto Lilloni 39/45",
+        "data": "30 Marzo 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.348311,
+          41.775849
         ]
       }
     }
