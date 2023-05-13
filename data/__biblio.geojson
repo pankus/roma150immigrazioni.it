@@ -140,6 +140,44 @@
           41.864021
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 8,
+        "nome": "Quarticciolo",
+        "indirizzo": "Via Castellaneta 10 00171 ROMA",
+        "biblio": "Biblioteca Quarticciolo",
+        "link": "https://www.bibliotechediroma.it/opac/library/Teatro%20Biblioteca%20Quarticciolo/RMBG2",
+        "indi": "Via Castellaneta 10",
+        "data": "1 Marzo 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.575936
+          41.891326, 
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 9,
+        "nome": "Testaccio",
+        "indirizzo": "Via Nicola Zabaglia 27/B 00153 ROMA",
+        "biblio": "Biblioteca Enzo Tortora",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Enzo%20Tortora/RMBA3",
+        "indi": "Via Nicola Zabaglia 27/B",
+        "data": "22 Marzo 2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.477588,
+          41.877125, 
+        ]
+      }
     }
   ]
 }

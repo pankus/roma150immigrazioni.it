@@ -144,7 +144,7 @@
     {
       "type": "Feature",
       "properties": {
-        "fid": 7,
+        "fid": 8,
         "nome": "Quarticciolo",
         "indirizzo": "Via Castellaneta 10 00171 ROMA",
         "biblio": "Biblioteca Quarticciolo",
@@ -163,7 +163,7 @@
     {
       "type": "Feature",
       "properties": {
-        "fid": 7,
+        "fid": 9,
         "nome": "Testaccio",
         "indirizzo": "Via Nicola Zabaglia 27/B 00153 ROMA",
         "biblio": "Biblioteca Enzo Tortora",
@@ -182,7 +182,7 @@
     {
       "type": "Feature",
       "properties": {
-        "fid": 7,
+        "fid": 10,
         "nome": "Tiburtino",
         "indirizzo": "Via di Grotta di Gregna 37 00155 ROMA",
         "biblio": "Biblioteca Vaccheria Nardi",
@@ -201,7 +201,7 @@
     {
       "type": "Feature",
       "properties": {
-        "fid": 7,
+        "fid": 11,
         "nome": "San Giovanni",
         "indirizzo": "Via la Spezia 21 00182 ROMA",
         "biblio": "Biblioteca Nelson Mandela",
@@ -220,7 +220,7 @@
     {
       "type": "Feature",
       "properties": {
-        "fid": 7,
+        "fid": 12,
         "nome": "Acilia",
         "indirizzo": "Via Umberto Lilloni 39/45 00124 ROMA",
         "biblio": "Biblioteca Sandro Onofri",
@@ -233,6 +233,25 @@
         "coordinates": [
           12.348311,
           41.775849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 13,
+        "nome": "Tuscolano",
+        "indirizzo": "Via Tuscolana 1111 00173 ROMA",
+        "biblio": "Biblioteca Raffaello",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Raffaello/RMBL1",
+        "indi": "Via Tuscolana 1111",
+        "data": "16 Maggio 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.583480,
+          41.844178 
         ]
       }
     }

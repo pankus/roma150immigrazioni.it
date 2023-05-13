@@ -26,6 +26,25 @@
           41.90618
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 2,
+        "nome": "Protomoteca del Campidoglio",
+        "indirizzo": "Piazza Campidoglio, 00186 Roma RM",
+        "biblio": "150 anni di immigrazioni a Roma capitale: il periodo dal 1945 a oggi",
+        "link": "programma011021.html",
+        "indi": "in diretta streaming",
+        "data": "1 Ottobre 2021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48293,
+          41.89330
+        ]
+      }
     }
   ]
 }
