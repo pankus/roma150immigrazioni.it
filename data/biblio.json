@@ -254,6 +254,25 @@
           41.844178 
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 14,
+        "nome": "Marconi",
+        "indirizzo": "Via Gerolamo Cardano 135 ROMA Via Tuscolana 1111 00173 ROMA",
+        "biblio": "Biblioteca Marconi",
+        "link": "https://www.bibliotechediroma.it/opac/library/Biblioteca%20Guglielmo%20Marconi/RMBQ1",
+        "indi": "Via Gerolamo Cardano 135",
+        "data": "17 Novembre 2023"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.465205,
+          41.862519
+        ]
+      }
     }
   ]
 }
